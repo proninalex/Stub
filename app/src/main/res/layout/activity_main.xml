@@ -7,10 +7,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="apronin.com.stub.MainActivity">
+    tools:context=".activity.MainActivity">
 
     <TextView
+        android:id="@+id/main_activity_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_activity_post"
+        android:id="@+id/main_activity_button"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/main_activity_hello"
+        android:layout_toEndOf="@+id/main_activity_hello" />
 </RelativeLayout>
